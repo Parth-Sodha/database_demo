@@ -24,7 +24,7 @@ class DbHelper {
   Future<void> onCreate(Database db, int version) async {
       await db.execute('''
       CREATE TABLE contact_master (
-        id PRIMARY KEY AUTOINCREMENT,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         mobile TEXT
       )'''
